@@ -1,4 +1,70 @@
+html{
+  scroll-behavior: smooth;
+  /* overflow: hidden; */
+}
+
 body{
   font-size: 25px;
-  color: orange;
+  color: rgb(0, 0, 0);
+  margin: 0 auto;
+  padding: 0px;
+  font-family:'Courier New', Courier, monospace;
+  /* background-image: URL("assets/skiteacher.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.imageContainer{
+  background-image: URL("assets/skiteacher.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 800px;
+}
+
+h1{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 55px;
+  opacity: 0.2;
+}
+
+p{
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.countDownDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 1100px;
+}
+
+#countText{
+}
+
+#clack{
+  font-size: 50px;
+}
+
+footer div{
+  display: flex;
+  justify-content: baseline;
+  background-color: gray;
+  height: 800px;
+}
+
+@media only screen and (max-width: 530px) {
 }
