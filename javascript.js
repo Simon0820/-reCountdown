@@ -2,7 +2,7 @@ function hello(){
   console.log("hello");
 }
 
-var targetDate = new Date("Jan 28, 2023 04:50:00").getTime();
+var targetDate = new Date("Jan 28, 2023 05:00:00").getTime();
 
 var x = setInterval(function() {
 
