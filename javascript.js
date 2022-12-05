@@ -1,1 +1,3 @@
-js file
+function hello(){
+  console.log("hello");
+}
