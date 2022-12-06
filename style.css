@@ -68,3 +68,15 @@ footer div{
     background-attachment: scroll;
   }
 }
+
+@media only screen and (max-width: 1980px) {
+  .imageContainer{
+    height: 1000px;
+}
+  .countDownDiv{
+    height: 1200px;
+}
+  footer div{
+  height: 1000px;
+}
+}
