@@ -19,9 +19,3 @@ var x = setInterval(function() {
     document.getElementById("clack").innerHTML = "Currently driving to big mountains in Åre";
   }
 }, 1000);
-
-var body = document.getElementByTagName("body");
-var cFont = documen.getElementById("cFont");
-cFont.addEventListener("click", function(){
-    body.style.color = red;
-});
