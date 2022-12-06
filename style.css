@@ -69,6 +69,18 @@ footer div{
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .imageContainer{
+    height: 850px;
+}
+  .countDownDiv{
+    height: 1150px;
+}
+  footer div{
+  height: 850px;
+}
+}
+
 @media only screen and (max-width: 1980px) {
   .imageContainer{
     height: 1000px;
