@@ -22,6 +22,6 @@ var x = setInterval(function() {
 
 var body = document.getElementByTagName("body");
 var cFont = documen.getElementById("cFont");
-cFont.addEventListener("click", function{
+cFont.addEventListener("click", function(){
     body.style.color = red;
 });
