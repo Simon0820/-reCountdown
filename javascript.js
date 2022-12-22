@@ -1,4 +1,6 @@
-var targetDate = new Date("Jan 28, 2023 05:00:00").getTime();
+// var targetDate = new Date("Jan 28, 2023 05:00:00").getTime();
+var targetDate = new Date("Dec 22, 2023 10:25:00").getTime();
+
 
 var x = setInterval(function() {
 
@@ -15,7 +17,8 @@ var x = setInterval(function() {
   + minutes + "m " + seconds + "s ";
 
   if (timeBetween < 0) {
-    clearInterval(x);
-    document.getElementById("clack").innerHTML = "Currently driving to big mountains in Åre";
+    // clearInterval(x);
+    // document.getElementById("clack").innerHTML = "Currently driving to big mountains in Åre";
+    var targetDate = new Date("Dec 22, 2024 10:25:00").getTime();
   }
 }, 1000);
