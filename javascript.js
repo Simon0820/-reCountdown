@@ -21,6 +21,32 @@ else{
 }
 
 
+var date5 = new Date("Dec 25, " + (cuYear) + " 21:30:00").getTime();
+var date6 = new Date("Dec 25, " + (cuYear) + " 21:31:00").getTime();
+var timeBetweenJanuary2 = date6 - date5;
+
+var y =  setTimeout(() => {
+  if (timeBetweenJanuary2 <= (date6 - justNowStart)){
+    console.log("Not inbetween 19.40 - 00.00");
+    var status = document.getElementById("status");
+    status.textContent = "";
+  }
+  else if (timeBetweenJanuary2 <= 0){
+    console.log("Not inbetween 19.40 - 00.00");
+    var status = document.getElementById("status");
+    status.textContent = "";
+  }
+  else{
+    console.log("Inbetween 19.40 - 00.00");
+    var status = document.getElementById("status");
+    status.textContent = /*"Hopfully left 05:00 from Gothenburg"*/"Gustav = sämst";
+    status.style.color = "#48fb47";
+  }
+}, 1000);
+
+
+
+
 function countDown(){
     // Get time
     var justNow = new Date().getTime();
@@ -53,8 +79,8 @@ var x = setInterval(() => {
 // var timeBetweenJanuary2 = date4 - date3;
 
 
-if(timeBetweenJanuary2 >= (date4 - date3)){
+// if(timeBetweenJanuary2 >= (date4 - date3)){
   // document.getElementById("clack").textContent = "Currently";
   // document.getElementById("clack").style.color = rgb(0, 255, 30);
-}
+// }
 
