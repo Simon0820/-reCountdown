@@ -9,10 +9,15 @@
     <script src="javascript.js"></script>
     <link href="style.css" rel="stylesheet"/>
 </head>
- 
+<!-- onclick="location.href='page.html';" -->
 <body>
+  <div id="topDiv">
+    <h4 id="h4A">Home<div id="a"></div></h4>
+    <h4 id="h4B">Contact<div id="b"></div></h4>
+    <h4 id="h4C">Info<div id="c"></div></h4>
+  </div>
+
   <div class="imageContainer">
-      <h1>Åre countdown</h1>
       <img></img>
   </div>
 
@@ -23,9 +28,17 @@
     </div>
 
     <div>
-      <p id="countText">Status:<p>
-        <h3 id="status"></h3>
+      <p>Status:<p>
+      <h3 id="status"></h3>
     </div>
+    <hr>
+    <div class="map">
+      <p>Target location:</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14293.240868102048!2d13.061745710433884!3d63.39714607876182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466e08d48ff233db%3A0x4034506de8c8460!2s837%2052%20%C3%85re!5e0!3m2!1ssv!2sse!4v1672084047955!5m2!1ssv!2sse" 
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
   </div>
   
   <footer>
