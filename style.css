@@ -92,6 +92,10 @@ footer div{
   .imageContainer{
     background-attachment: scroll;
   }
+
+  #googleMap{
+    width: 350px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {

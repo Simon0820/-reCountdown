@@ -51,6 +51,9 @@ var z = setTimeout(() =>{
 //   localStorage.date = new Date("Jan 28, " + (cuYear + 1) + " 05:00:00").getTime();
 // }
 
+localStorage.date = new Date("Jan 28, 2023 23:59:00").getTime();
+
+
 setInterval( function(){ 
   var month = new Date().getMonth();
   var date = new Date().getDate();
@@ -68,7 +71,6 @@ setInterval( function(){
   var minute = new Date().getMinutes();
   // month == 1 && date == 28 && hour >= 5 && hour <= 6
   if (hour >= 12 && hour <= 18){
-    localStorage.date = new Date("" + month + " " + date + ", " + (year + 1) + " 23:59:00").getTime();
     var status = document.getElementById("status");
     status.textContent = /*"Hopfully left 05:00 from Gothenburg"*/"Gustav = sämst";
     status.style.color = "#48fb47";
