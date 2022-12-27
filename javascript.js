@@ -70,7 +70,7 @@ setInterval( function(){
   var hour = new Date().getHours();
   var minute = new Date().getMinutes();
   // month == 1 && date == 28 && hour >= 5 && hour <= 6
-  if (hour >= 12 && hour <= 22){
+  if (hour >= 12 && hour <= 23){
     var status = document.getElementById("status");
     status.textContent = /*"Hopfully left 05:00 from Gothenburg"*/"Gustav = sämst";
     status.style.color = "#48fb47";
