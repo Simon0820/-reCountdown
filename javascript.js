@@ -51,7 +51,7 @@ var z = setTimeout(() =>{
 //   localStorage.date = new Date("Jan 28, " + (cuYear + 1) + " 05:00:00").getTime();
 // }
 
-localStorage.date = new Date("Jan 28, 2023 23:59:00").getTime();
+localStorage.date = new Date("Jan 28, 2023 05:00:00").getTime();
 
 
 setInterval( function(){ 
