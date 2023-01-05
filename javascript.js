@@ -29,31 +29,6 @@ var z = setTimeout(() =>{
   c.style.display = "none";
 }, 1);
 
-// // Current year
-// var cuDate = new Date();
-// var cuYear = cuDate.getFullYear();
-// console.log("Current Year:", cuYear);
-
-// // Current time
-// var justNowStart = new Date().getTime();
-
-// // Date between New Year and Skitrip
-// var date1 = new Date("Jan 1, " + (cuYear + 1) + " 00:00:00").getTime();
-// var date2 = new Date("Jan 28, " + (cuYear + 1) + " 04:59:59").getTime();
-// var timeBetweenJanuary = date2 - date1;
-
-// if (timeBetweenJanuary >= (date2 - justNowStart)){
-//   console.log("Inbetween Jan 1 (00:00:00) and Jan 28 (04:59:59)");
-//   localStorage.date = new Date("Jan 28, " + (cuYear) + " 05:00:00").getTime();
-// }
-// else{
-//   console.log("Not inbetween Jan 1 (00:00:00) and Jan 28 (04:59:59)");
-//   localStorage.date = new Date("Jan 28, " + (cuYear + 1) + " 05:00:00").getTime();
-// }
-
-localStorage.date = new Date("Jan 28, 2023 23:59:00").getTime();
-
-
 setInterval( function(){ 
   var month = new Date().getMonth();
   var date = new Date().getDate();
@@ -69,23 +44,38 @@ setInterval( function(){
   var date = new Date().getDate();
   var hour = new Date().getHours();
   var minute = new Date().getMinutes();
+
+  // #FF5733 NEON RED
+  // #48fb47 NEON GREEN
+  // #ccff15 NEON YELLOW
+
   // month == 1 && date == 28 && hour >= 5 && hour <= 6
-  if (hour >= 12 && hour <= 18){
+  if (hour >= 18 && hour < 20){
     var status = document.getElementById("status");
-    status.textContent = /*"Hopfully left 05:00 from Gothenburg"*/"Gustav = sämst";
+    status.textContent = "Gustav har druckit en bärs";
     status.style.color = "#48fb47";
+  }
+  else if (hour >= 20 && hour < 22){
+    var status = document.getElementById("status");
+    status.textContent = "Gustav börjar bli lite påverkad";
+    status.style.color = "#ccff15";
+    
+  }
+  else if (hour >= 22 && hour == 23){
+    var status = document.getElementById("status");
+    status.textContent = "Gustav har däckat på grund av för många promille";
+    status.style.color = "#FF5733";
+    
   }
   else{
     var status = document.getElementById("status");
-    status.textContent = /*"Hopfully left 05:00 from Gothenburg"*/"Gustav = bäst";
+    status.textContent = "";
     status.style.color = "#48fb47";
   }
-  // var hour = new Date().getHours();
-  // if (hour >= 9 && hour < 18) {
-  //     do_this(); 
-  // }
 } , 1000);
 
+// GET countdown date
+localStorage.date = new Date("Jan 28, 2023 05:00:00").getTime();
 function countDown(){
     // Get time
     var justNow = new Date().getTime();
@@ -109,30 +99,3 @@ function countDown(){
 var x = setInterval(() => {
   countDown();
 }, 1000);
-
-// var f = setInterval(() =>{
-//   var justNowStart2 = new Date().getTime();
-//   var date5 = new Date("Dec 26, " + (cuYear) + " 21:25:00").getTime();
-//   var date6 = new Date("Dec 26, " + (cuYear) + " 21:30:00").getTime();
-//   var timeBetweenJanuary2 = date6 - date5;
-
-//   var y = setTimeout(() => {
-//     if (timeBetweenJanuary2 <= (date6 - justNowStart2)){
-//       console.log("Not inbetween 19.40 - 00.00");
-//       var status = document.getElementById("status");
-//       status.textContent = "";
-//     }
-//     else{
-//       console.log("Inbetween 19.40 - 00.00");
-      // var status = document.getElementById("status");
-      // status.textContent = /*"Hopfully left 05:00 from Gothenburg"*/"Gustav = sämst";
-      // status.style.color = "#48fb47";
-//       clearInterval(f);
-//     }
-// }, 1000);
-// }, 1000);
-
-// var f = setInterval(() =>{
-//   var y = setTimeout(() => {
-// }, 1000);
-// }, 1000);
