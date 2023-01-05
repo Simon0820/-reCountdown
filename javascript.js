@@ -41,7 +41,7 @@ setInterval( function(){
   // #ccff15 NEON YELLOW
 
   // month == 1 && date == 28 && hour >= 5 && hour <= 6
-  if (hour >= 12 && hour <= 18){
+  if (hour >= 18 && hour < 20){
     var status = document.getElementById("status");
     status.textContent = "Gustav har druckit en bärs";
     status.style.color = "#48fb47";
