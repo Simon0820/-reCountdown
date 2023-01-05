@@ -30,15 +30,6 @@ var z = setTimeout(() =>{
 }, 1);
 
 setInterval( function(){ 
-  var month = new Date().getMonth();
-  var date = new Date().getDate();
-  var hour = new Date().getHours();
-  if (month == 1 && date == 28 && hour >= 5){
-    console.log("worked");
-  }
-} , 1000);
-
-setInterval( function(){ 
   var year = new Date().getFullYear();
   var month = new Date().getMonth();
   var date = new Date().getDate();
@@ -50,7 +41,7 @@ setInterval( function(){
   // #ccff15 NEON YELLOW
 
   // month == 1 && date == 28 && hour >= 5 && hour <= 6
-  if (hour >= 18 && hour < 20){
+  if (hour >= 12 && hour <= 18){
     var status = document.getElementById("status");
     status.textContent = "Gustav har druckit en bärs";
     status.style.color = "#48fb47";
@@ -92,7 +83,7 @@ function countDown(){
   
     if (timeBetween < 0) {
       clearInterval(x);
-      document.getElementById("clack").textContent = "Empty";
+      document.getElementById("clack").textContent = "Less than 12 hours to Åre";
     }
 }
 
