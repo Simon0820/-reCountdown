@@ -66,7 +66,7 @@ setInterval( function(){
 } , 1000);
 
 // GET countdown date
-localStorage.date = new Date("Jan 28, 2023 05:00:00").getTime();
+localStorage.date = new Date("Jan 28, 2023 17:00:00").getTime();
 function countDown(){
     // Get time
     var justNow = new Date().getTime();
