@@ -15,6 +15,10 @@ body{
   background-repeat: no-repeat; */
 }
 
+#status{
+  text-align: center;
+}
+
 #topDiv{
   display: flex;
   justify-content: center;
@@ -24,8 +28,6 @@ body{
 
 #topDiv h4{
   cursor: pointer;
-  /* position: absolute;
-  top: 20px; */
 }
 #a, #b, #c{
   background-color: rgb(255, 255, 255);
@@ -41,23 +43,11 @@ body{
   height: 100%;
   z-index: -10;
   background-image: URL("assets/skiteacher.jpg");
-  
   position: fixed; 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-
-/* h1{
-  position: sticky;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  top: 25px;
-  opacity: 0.2;
-} */
 
 p{
   margin-left: auto;

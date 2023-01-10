@@ -52,7 +52,7 @@ setInterval( function(){
     status.style.color = "#ccff15";
     
   }
-  else if (hour >= 22 && hour == 23){
+  else if (hour >= 9 && hour == 10){
     var status = document.getElementById("status");
     status.textContent = "Gustav har däckat på grund av för många promille";
     status.style.color = "#FF5733";
