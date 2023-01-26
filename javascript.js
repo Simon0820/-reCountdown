@@ -83,7 +83,7 @@ function countDown(){
   
     if (timeBetween < 0) {
       clearInterval(x);
-      document.getElementById("clack").textContent = "Less than 12 hours to Åre";
+      document.getElementById("clack").textContent = "Touchdown Åre";
     }
 }
 
