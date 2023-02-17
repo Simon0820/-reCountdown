@@ -43,18 +43,18 @@ setInterval( function(){
   // month == 1 && date == 28 && hour >= 5 && hour <= 6
   if (hour >= 18 && hour < 20){
     var status = document.getElementById("status");
-    status.textContent = "Gustav har druckit en bärs";
+    status.textContent = "Klockan är mellan 18:00 & 20:00";
     status.style.color = "#48fb47";
   }
   else if (hour >= 20 && hour < 22){
     var status = document.getElementById("status");
-    status.textContent = "Gustav börjar bli lite påverkad";
+    status.textContent = "Klockan är mellan 20:00 & 22:00";
     status.style.color = "#ccff15";
     
   }
   else if (hour >= 22 && hour == 23){
     var status = document.getElementById("status");
-    status.textContent = "Gustav har däckat på grund av för många promille";
+    status.textContent = "Klockan är mellan 22:00 & 00:00";
     status.style.color = "#FF5733";
     
   }
@@ -66,7 +66,7 @@ setInterval( function(){
 } , 1000);
 
 // GET countdown date
-localStorage.date = new Date("Jan 28, 2023 17:00:00").getTime();
+localStorage.date = new Date("Feb 20, 2024 17:00:00").getTime();
 function countDown(){
     // Get time
     var justNow = new Date().getTime();
@@ -83,7 +83,7 @@ function countDown(){
   
     if (timeBetween < 0) {
       clearInterval(x);
-      document.getElementById("clack").textContent = "Touchdown Åre";
+      document.getElementById("clack").textContent = "Touchdown";
     }
 }
 
